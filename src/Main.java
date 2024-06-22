@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,18 +34,18 @@ public class Main {
         }*/
 
         //ZAD2
-        /*ArrayList<Item> itemList = new ArrayList<Item>();
-        Item a = new Item(2, "String itemA");
-        Item b = new Item(1, "String itemB");
-        Item c = new Item(4, "String itemC");
-        Item d = new Item(5, "String itemD");
-        Item e = new Item(3, "String itemE");
+        ArrayList<Item> itemList = new ArrayList<Item>();
+        Item a = new Item(2, "itemA");
+        Item b = new Item(1, "itemB");
+        Item c = new Item(4, "itemC");
+        Item d = new Item(5, "itemD");
+        Item e = new Item(3, "itemE");
         itemList.add(a);
         itemList.add(b);
         itemList.add(c);
         itemList.add(d);
         itemList.add(e);
-
+        /*
         Map<Integer, String> items = new HashMap<>();
         for (Item item:itemList) {
             item.show(item.getId()+" | "+item.getName());
@@ -59,6 +56,34 @@ public class Main {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }*/
 
+        //ZAD 3
+        Item f = new Item(8, "itemF");
+        Item g = new Item(9, "itemG");
+        Item h = new Item(6, "itemH");
+        Item i = new Item(10, "itemI");
+        Item j = new Item(3, "itemJ");
+        Item k = new Item(14, "itemK");
+        Item l = new Item(13, "itemL");
+        Item m = new Item(12, "itemM");
+        Item n = new Item(15, "itemN");
+        Item o = new Item(11, "itemO");
+        itemList.add(f);
+        itemList.add(g);
+        itemList.add(h);
+        itemList.add(i);
+        itemList.add(j);
+        itemList.add(k);
+        itemList.add(l);
+        itemList.add(m);
+        itemList.add(n);
+        itemList.add(o);
 
+        HashSet<Item> itemListSub = new HashSet<>(itemList.subList(0, 4));
+
+        //to wyżej podpowiedział mi intelliJ
+        /*HashSet<Item> itemListSub = new HashSet<>();
+        for (Item item : itemList.subList(0,4)) {
+            itemListSub.add(item);
+        }*/
     }
 }
