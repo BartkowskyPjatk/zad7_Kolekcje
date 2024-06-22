@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,6 +35,30 @@ public class Main {
         for (Car car:CarList) {
             System.out.println(car.getCarModel() +" "+ car.getProductionYear());
         }*/
+
+        //ZAD2
+        /*ArrayList<Item> itemList = new ArrayList<Item>();
+        Item a = new Item(2, "String itemA");
+        Item b = new Item(1, "String itemB");
+        Item c = new Item(4, "String itemC");
+        Item d = new Item(5, "String itemD");
+        Item e = new Item(3, "String itemE");
+        itemList.add(a);
+        itemList.add(b);
+        itemList.add(c);
+        itemList.add(d);
+        itemList.add(e);
+
+        Map<Integer, String> items = new HashMap<>();
+        for (Item item:itemList) {
+            item.show(item.getId()+" | "+item.getName());
+            items.put(item.getId(), item.getName());
+        }
+        System.out.println("===================================");
+        for (Map.Entry<Integer, String> entry : items.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }*/
+
 
     }
 }
