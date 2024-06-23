@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         //ZAD 1
-        /*ArrayList<Car> CarList = new ArrayList<Car>();
+        ArrayList<Car> CarList = new ArrayList<Car>();
         Car audi_a1 = new Car("Audi a1", 2014);
         Car audi_a3 = new Car("Audi a1", 2024);
         Car audi_a4 = new Car("Audi a1", 2016);
@@ -31,7 +31,7 @@ public class Main {
         Collections.sort(CarList);
         for (Car car:CarList) {
             System.out.println(car.getCarModel() +" "+ car.getProductionYear());
-        }*/
+        }
 
         //ZAD2
         ArrayList<Item> itemList = new ArrayList<Item>();
@@ -45,7 +45,7 @@ public class Main {
         itemList.add(c);
         itemList.add(d);
         itemList.add(e);
-        /*
+
         Map<Integer, String> items = new HashMap<>();
         for (Item item:itemList) {
             item.show(item.getId()+" | "+item.getName());
@@ -54,7 +54,7 @@ public class Main {
         System.out.println("===================================");
         for (Map.Entry<Integer, String> entry : items.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
-        }*/
+        }
 
         //ZAD 3
         Item f = new Item(8, "itemF");
@@ -85,5 +85,15 @@ public class Main {
         for (Item item : itemList.subList(0,4)) {
             itemListSub.add(item);
         }*/
+
+        //ZAD 4
+        int[] table = new int[10];
+        InputHelpZad4 inputHelp = new InputHelpZad4(0);
+        inputHelp.fillArray(table);
+
+        System.out.println("liczby w tablicy:");
+        for (int liczba:table) {
+            System.out.println(liczba);
+        }
     }
 }
