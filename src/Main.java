@@ -88,7 +88,7 @@ public class Main {
 
         //ZAD 4
         int[] table = new int[10];
-        InputHelpZad4 inputHelp = new InputHelpZad4(0);
+        InputHelpZad4 inputHelp = new InputHelpZad4();
         inputHelp.fillArray(table);
 
         System.out.println("liczby w tablicy:");
